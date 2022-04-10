@@ -1,2 +1,2 @@
-# Qr-CodeMaker
--  https://mramankapoor.github.io/QR-CodeMaker/
+# Qr-CodeMaker Hosting Link
+-  https://mramankapoor.github.io/QR-CodeMaker/QR%20CodeMaker/index.html
