@@ -27,15 +27,15 @@
             </header>
             <div class="row">
                 <div class="input-field">
-                    <input type="text" placeholder="Enter Text or URL">
-                    <button>Generate QR Code</button>
-                    <p>Your QR code data is encrypted during transmission and not stored.</p>
+                    <textarea placeholder="Enter Text or URL" onkeyup="changeinfo()" rows="6" cols="50"></textarea>
+                  <p>  <strong id="character">0 Character</strong><strong id="words"> 0 Word</strong></p>
+                    
                 </div>
 
                 <div class="qr-code">
                     <p>Live preview</p>
-                    <img src="" alt="QR Code">
-                    <button>Download</button>
+                    <img src="Images/Qr-code.png" alt="QR Code">
+                    <a id="download" href="" download>Download</a>
                 </div>
 
             </div>
@@ -43,6 +43,7 @@
 
     </div>
     <div class="about" id="about">
+        <h2><p>Your QR code data is encrypted during transmission and not stored.</p></h2>
         <h3>Information about our QR CodeMaker</h3>
         <p>You can generate free QR codes on this website. A QR code is a two dimensional barcode that stores
             information in black and white dots (called data pixels or “QR code modules”). Besides the black and white
@@ -72,7 +73,7 @@
             on). Therefore we created a small overview of the most important products.</p>
     
             <h3>Free QR codes on <strong>QR CodeMaker </strong> – help us :-)</h3>
-            <p>This QR code generator is a gift to the Internet community brought to you by Aman Kapoor. QRcodes created on
+            <p>This QR code generator is a gift to the Internet community brought to you by <strong>Aman Kapoor </strong>. QRcodes created on
                 <strong>QR CodeMaker </strong> are completely free of charge.
             </p>
             <p>The easiest way to help us to keep this online for free is to link to us on your website or to recommend us
