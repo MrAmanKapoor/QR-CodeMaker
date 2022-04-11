@@ -3,53 +3,84 @@
     padding: 0%;
     font-family: 'Acme', sans-serif;
     scroll-behavior: smooth;
-   
     box-sizing: border-box;
 }
 body
 {
     display: flex;
+    max-width: 97.1vw;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    flex-direction: column;
     background-color: rgb(213, 205, 205);
 }
-.card
+.header
 {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    position:absolute;
+    top: 0%;
+    color: white;
+    padding-top: 1%;
+    padding-left: 10%;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.header a
+{
+    color: white;
+    text-decoration: none;
+    margin-right: 2%;
+    padding-top: 0.5%;
+    
+}
+.card
+{   
     background-color: white;
+    margin-top: 10%;
     padding: 5%;
-    min-width: 400px;
-    height: 265px;
+    min-width: 80vw;
+    height: 70vh;
     border-radius: 10px;
     transition: height 0.2s 0.2s ease;
 }
 .card.active
 {
-    height: 545px;
+    height: 70vh;
 }
 header h2
 {
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
+    margin-bottom: 2%;
     
+}
+.row
+{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: space-between;
 }
 .card .input-field
 {
     margin: 20px 0 30px;
+    
 }
-.input-field :where(input,button)
+.input-field :where(button,textarea)
 {
     width: 100%;
-    height: 55px;
     outline: none;
     border: none;
     border-radius: 5px;
 }
-.input-field input
+.input-field textarea
 {
     font-size: 16px;
-    padding: 0 17px;
+    padding: 10px 10px;
     border: 1px solid rgb(157, 146, 146);
+    text-align: justify;
 }
 .input-field button
 {
@@ -59,10 +90,13 @@ header h2
     margin-top: 20px;
     cursor: pointer;
 }
+
 .qr-code img
 {
-    width: 230px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10%;
+    border: 2px solid black;
     
 }
 .card .qr-code
@@ -70,15 +104,69 @@ header h2
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    border: 1px solid rgb(192, 183, 183);
-    opacity: 0;
+    border: 0px solid rgb(192, 183, 183);
+    opacity: 1;
     pointer-events: none;
     padding: 2%;
 }
+
 
 .card.active .qr-code
 {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.3s 0.3s ease;
+}
+.qr-code
+{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    position: absolute;
+    right: 16%;
+    top: 29%;
+}
+.qr-code a
+{
+    width: 100%;
+    padding: 5px;
+    margin-top: 3%;
+    background-color: yellow;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.about
+{
+    background-color: white;
+    margin-top: 2px;
+    padding: 5%;
+    width: 80vw;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+.about p, .about h3,.about a
+{
+    padding: 1%;
+    color: rgb(110, 106, 106);
+    text-align: justify;
+}
+.about h3
+{
+    color: black;
+}
+
+@media(max-width: 925px) 
+{
+    .card.active{height: 120vh;}
+    .card{height: 120vh;}
+    .card{margin-top: 15%;}
+    .row{flex-direction: column;}
+    .qr-code{top: 75%; left: 12%;}
+    .about{width: 85vw;}
 }
