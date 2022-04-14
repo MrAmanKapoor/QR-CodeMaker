@@ -161,7 +161,7 @@ header h2
     color: black;
 }
 
-@media(max-width: 925px) 
+@media(max-width: 925px) , (orientation: portrait) 
 {
     .card.active{height: 120vh;}
     .card{height: 120vh;}
