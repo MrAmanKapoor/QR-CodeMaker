@@ -161,19 +161,18 @@ header h2
     color: black;
 }
 
-@media(max-width: 925px)  
+@media(orientation: portrait) 
+{
+    .card.active{height: 100vh;}
+    .row{flex-direction: column;}
+    .qr-code{top: 60%; left: 12%;}
+    .card{height: 100vh; padding-top: 12%;}
+}
+@media(max-width: 760px)
+    
 {
     .card.active{height: 120vh;}
     .card{height: 120vh;}
-    .card{margin-top: 15%;}
-    .row{flex-direction: column;}
-    .qr-code{top: 75%; left: 12%;}
-    .about{width: 85vw;}
-}
-@media(orientation: portrait) 
-{
-    .card.active{height: 80vh;}
-    .card{height:80vh;}
     .card{margin-top: 15%;}
     .row{flex-direction: column;}
     .qr-code{top: 75%; left: 12%;}
