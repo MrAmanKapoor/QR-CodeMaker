@@ -12,30 +12,51 @@ body
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(213, 205, 205);
+    background-color:rgb(34,121,75);
 }
 .header
 {
-    background-color: black;
+   
     width: 100vw;
     height: 10vh;
     position:absolute;
     top: 0%;
     color: white;
-    padding-top: 1%;
-    padding-left: 10%;
-    font-size: 22px;
+    padding-left: 5%;
+    padding-top:2% ;
+    font-size: 2cw;
     display: flex;
     justify-content: space-between;
+    
 }
-.header a
+.header img
+{
+    width: 20vw;
+    height: 6ch;
+}
+.header a,header a
 {
     color: white;
     text-decoration: none;
     margin-right: 2%;
     padding-top: 0.5%;
+    justify-content: space-around;
+    padding-right: 1%;
+    float: right;
+   
     
 }
+header a
+{
+    float: none;
+    color:rgb(34,121,75); 
+    font-weight: 700;
+}
+.header a:hover,header a:hover
+{
+    color: rgb(205, 198, 198);
+}
+
 .card
 {   
     background-color: white;
@@ -160,7 +181,6 @@ header h2
 {
     color: black;
 }
-
 @media(orientation: portrait) 
 {
     .card.active{height: 100vh;}
@@ -171,6 +191,11 @@ header h2
 @media(max-width: 760px)
     
 {
+    .header img
+{
+    width: 20vw;
+    height: 6ch;
+}
     .card.active{height: 120vh;}
     .card{height: 120vh;}
     .card{margin-top: 15%;}
