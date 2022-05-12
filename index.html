@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:ital,wght@0,600;0,700;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <title>QR CodeMaker</title>
+</head>
+
+<body>
+    <div class="header">
+        <div><img src="Images/logo.png"></div>
+        <div style="width:60vw">
+            <a href="#about">About</a>
+            <a href="#about">Chrome App</a>
+            <a href="#about">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <header>
+                <a href="#about">Text</a>
+                <a href="#about">URL</a>
+                <a href="#about">Email</a>
+                <a href="#about">Phone</a>
+                <a href="#about">SMS</a>
+                <a href="#about">VCard</a>
+                <a href="#about">Event</a>
+                <a href="#about">WIFI</a>
+                <a href="#about">Instagram</a>
+                <a href="#about">Facebook</a>
+                <a href="#about">Bitcoin</a>
+                <a href="#about">SocialMedia</a>
+                <br>
+            </header>
+            <div class="row">
+                <div class="input-field">
+                    <textarea placeholder="Enter Text or URL" onkeyup="changeinfo()" rows="6" cols="50"></textarea>
+                    <p> <strong id="character">0 Character</strong><strong id="words"> 0 Word</strong></p>
+
+                </div>
+
+                <div class="qr-code">
+                    <p>Live preview</p>
+                    <img src="Images/Qr-code.png" alt="QR Code">
+                    <a id="download" href="" download>Download</a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="about" id="about">
+        <h2>
+            <p>Your QR code data is encrypted during transmission and not stored.</p>
+        </h2>
+        <h3>Information about our QR CodeMaker</h3>
+        <p>You can generate free QR codes on this website. A QR code is a two dimensional barcode that stores
+            information in black and white dots (called data pixels or “QR code modules”). Besides the black and white
+            version, you can also create a colored QR code. For these codes to work without problems, make sure the
+            contrast is sufficient and the result is not a negative (in terms of color). To make your QR code even
+            better, you can also get a QR code with logo.<br>
+            We use the service (API) of <a href="https://goqr.me/api/"> QR code generator</a> in our Website.
+
+
+        </p>
+
+        <h3>Create a QR code</h3>
+        <p>Just enter your text, your URL, a SMS or vCard contact information. The QR code will be generated
+            automatically as you type. Just click on the “Download” button to get the created QR code image then (the
+            image is available as EPS or SVG vector graphic, as well as high-resolution PNG, GIF or JPEG raster graphics
+            format). You can also embed the QR code directly on your own website and use it, just have a look at the
+            code offered by the “Embed” button. Of course, you can place and use the QR graphic on leaflets, posters,
+            business cards or other products without any costs / for free (including commercial use).</p>
+        <p>QR codes are the way to go to create a link between the real world products (tagged with the QR code) and the
+            Internet. Mobile, anywhere, anytime. Because QR codes make it so easy to transfer a web link to a mobile
+            phone, they provide a significantly lower barrier to visit a site with a smart phone. But you can also work
+            with other texts and data, such as advertising messages, telephone numbers and even entire business cards in
+            vCard format. Just encode them with our QR code generator to easily transfer the data to mobile devices.</p>
+
+        <h3>QR code software</h3>
+        <p>There are many QR code software products on the market (to create, read, manage or design a QR code, and so
+            on). Therefore we created a small overview of the most important products.</p>
+
+        <h3>Free QR codes on <strong>QR CodeMaker </strong> – help us :-)</h3>
+        <p>This QR code generator is a gift to the Internet community brought to you by <strong>Aman Kapoor </strong>.
+            QRcodes created on
+            <strong>QR CodeMaker </strong> are completely free of charge.
+        </p>
+        <p>The easiest way to help us to keep this online for free is to link to us on your website or to recommend us
+            on Facebook, Twitter or Google+.</p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
