@@ -203,3 +203,21 @@ header h2
     .qr-code{top: 75%; left: 12%;}
     .about{width: 85vw;}
 }
+
+/* 
+@media(max-width: 760px)
+    
+{
+    .header img
+{
+    width: 10vw;
+    height: 3vh;
+}
+    .card.active{height: 20vh;}
+    .card{height: 120vh;}
+    .card{margin-top: 15%;}
+    .row{flex-direction: column;}
+    .qr-code{top: 75%; left: 12%;}
+    .about{width: 85vw;}
+}
+ */
