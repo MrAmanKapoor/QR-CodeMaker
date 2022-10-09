@@ -58,32 +58,5 @@ function changeinfo() {
     qrImg.addEventListener("load", () =>
         card.classList.add("active"),
     )
-};
-
-qrInput.addEventListener("keyup", () => {
-    if(!qrInput.value)
-    {
-        card.classList.remove("active");
-        document.getElementById("character").innerHTML=0+(" Character");
-        document.getElementById("words").innerHTML=0+(" Word");
-        qrImg.src="Images/Qr-code.png";
-    }
-});
-
-
-
-const card = document.querySelector(".card"),
-    qrInput = card.querySelector(".input-field textarea"),
-    qrImg = card.querySelector(".qr-code img");
-   
-
-    
-
-
-
-
-
-
-
-
+}
 */
