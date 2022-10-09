@@ -96,15 +96,7 @@ function changeinfo() {
     )
 };
 
-qrInput.addEventListener("keyup", () => {
-    if(!qrInput.value)
-    {
-        card.classList.remove("active");
-        document.getElementById("character").innerHTML=0+(" Character");
-        document.getElementById("words").innerHTML=0+(" Word");
-        qrImg.src="Images/Qr-code.png";
-    }
-});
+
 
 
 
