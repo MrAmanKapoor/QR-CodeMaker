@@ -100,13 +100,6 @@ function changeinfo() {
 
 
 
-const card = document.querySelector(".card"),
-    qrInput = card.querySelector(".input-field textarea"),
-    qrImg = card.querySelector(".qr-code img");
-   
-
-
-
 
 
 */
